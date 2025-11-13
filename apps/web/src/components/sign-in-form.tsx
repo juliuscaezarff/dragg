@@ -27,15 +27,15 @@ export default function SignInForm({
 					email: value.email,
 					password: value.password,
 				},
-				{
-					onSuccess: () => {
-						router.push("/dashboard");
-						toast.success("Sign in successful");
-					},
-					onError: (error) => {
-						toast.error(error.error.message || error.error.statusText);
-					},
-				},
+                {
+                    onSuccess: () => {
+                        router.push("/app");
+                        toast.success("Sign in successful");
+                    },
+                    onError: (error) => {
+                        toast.error(error.error.message || error.error.statusText);
+                    },
+                },
 			);
 		},
 		validators: {

@@ -29,15 +29,15 @@ export default function SignUpForm({
 					password: value.password,
 					name: value.name,
 				},
-				{
-					onSuccess: () => {
-						router.push("/dashboard");
-						toast.success("Sign up successful");
-					},
-					onError: (error) => {
-						toast.error(error.error.message || error.error.statusText);
-					},
-				},
+                {
+                    onSuccess: () => {
+                        router.push("/app");
+                        toast.success("Sign up successful");
+                    },
+                    onError: (error) => {
+                        toast.error(error.error.message || error.error.statusText);
+                    },
+                },
 			);
 		},
 		validators: {
