@@ -1,8 +1,13 @@
+<p align="center">
+  <img src="apps/web/public/logo.png" alt="Dragg favicon" width="96" height="96" />
+</p>
+
 # dragg
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, Self, ORPC, and more.
+An infinite canvas for dragging and dropping anything you care about.
+Unless you forget they’re here.
 
-## Features
+## Techs
 
 - **TypeScript** - For type safety and improved developer experience
 - **Next.js** - Full-stack React framework
@@ -22,6 +27,7 @@ First, install the dependencies:
 ```bash
 bun install
 ```
+
 ## Database Setup
 
 This project uses PostgreSQL with Prisma.
@@ -30,10 +36,10 @@ This project uses PostgreSQL with Prisma.
 2. Update your `apps/web/.env` file with your PostgreSQL connection details.
 
 3. Generate the Prisma client and push the schema:
+
 ```bash
 bun run db:push
 ```
-
 
 Then, run the development server:
 
@@ -42,12 +48,6 @@ bun run dev
 ```
 
 Open [http://localhost:3001](http://localhost:3001) in your browser to see your fullstack application.
-
-
-
-
-
-
 
 ## Project Structure
 
