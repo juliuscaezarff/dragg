@@ -81,13 +81,13 @@ const FeatureHighlight = React.forwardRef<
           <motion.div
             key={index}
             variants={itemVariants}
-            className="text-2xl text-muted-foreground"
+            className="text-xl text-muted-foreground"
           >
             {feature}
           </motion.div>
         ))}
       </div>
-      
+
       {/* Animated Footer */}
       {footer && <motion.div variants={itemVariants}>{footer}</motion.div>}
     </motion.div>
